@@ -4,7 +4,7 @@ namespace: knative-eventing
 resources:
 - upstream/eventing-core.yaml
 - upstream/in-memory-channel.yaml
-#- upstream/mt-channel-broker.yaml
+- upstream/mt-channel-broker.yaml
 patchesStrategicMerge:
 - patches/clusterrole-patch.yaml
 commonLabels:
